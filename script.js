@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
           messages.push('Email must include both "@" and "." characters.')
        };
 
+       if(password.length < 3){
+        isValid = false;
+        messages.push("password is to short")
+       }
        feedbackDiv.style.display = 'block';
        if(isValid){
           feedbackDiv.textContent("Registration successful!")
