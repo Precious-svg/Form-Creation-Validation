@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
           messages.push("Username is too short")
         };
 
-        if(!email.includes('@') || !email.includes(',')){
+        if(!email.includes('@') || !email.includes('.')){
           isValid = false;
           messages.push('Email must include both "@" and "." characters.')
        };
 
        feedbackDiv.style.display = 'block';
        if(isValid){
-          feedbackDiv.textContent("Registration Successful!")
+          feedbackDiv.textContent("Registration successful!")
           feedbackDiv.style.color = "#28a745";
         } else{
            feedbackDiv.innerHTML = messages.join('<br>')
