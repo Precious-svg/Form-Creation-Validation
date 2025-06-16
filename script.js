@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         isValid = false;
         messages.push("password is to short")
        }
+       
        feedbackDiv.style.display = 'block';
        if(isValid){
           feedbackDiv.textContent("Registration successful!")
