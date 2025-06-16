@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const feedbackDiv = document.getElementById('form-feedback');
 
-    form.addEventListener('submit', () => {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const username = document.getElementById('username').value.trim();
